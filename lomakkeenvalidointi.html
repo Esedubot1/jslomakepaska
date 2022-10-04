@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projects</title>
+</head>
+
+<body>
+    <!--Navigaatio-->
+    <div class="navbar">
+        <div class="container flex">
+            <a href="index.html">Home</a>
+            <a href="projects.html" class="current">Projects</a>
+            <a href="cats.html">Cats</a>
+            <a href="links.html">Links</a>
+        </div>
+    </div>
+
+    <!--Sisältö-->
+    <div class="nottext">
+        <h1 id ="lol" style="text-align: center"></h1>
+        <p id="*">* = pakollinen kenttä</p>
+        <form id="lomake" onsubmit="return validateForm()">  
+            <p>Käyttäjä-ID*:</p>
+            <input id="userid" type="text" name="userid" value="">
+            <p>Salasana*:</p>
+            <input id="password" type="password" name="password" value="">
+            <p>Nimi*:</p>
+            <input id="name" type="text" name="name" value="">
+            <p>Osoite*:</p>
+            <input id="address" type="text" name="address" value="">
+            <p>Maa*:</p>
+            <select id="country" name="country">
+                <option value="">-</option>
+                <option value="fi">Suomi</option>
+                <option value="other">Muu</option>
+            </select>
+            <p>Postinumero*:</p>
+            <input id="postal" type="number" name="postal" value="">
+            <p>Sähköposti*:</p>
+            <input id="email" type="text" name="email" value="">
+            <p>Sukupuoli*:</p>
+            <div>
+                <input type="radio" name="gender"  value="mies">Mies
+                <input type="radio" name="gender"  value="nainen">Nainen
+                <input type="radio" name="gender"  value="muu">Muu 
+            </div>
+            <p>Kieli*:</p>
+            <div>
+                <input type="radio" name="language"  value="suomi">Suomi
+                <input type="radio" name="language"  value="eisuomi">Muu kuin suomi
+            </div>
+            <p>Lisätietoja:</p>
+            <textarea id="extra" name="extra" rows="5" cols="40"></textarea>
+            <input type="submit" name="submit" value="Lähetä">  
+          </form>
+          <script src="js/lomakepaska.js"></script>
+    </div>
+</body>
+
+</html>
